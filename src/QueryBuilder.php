@@ -1048,6 +1048,7 @@ class QueryBuilder extends Builder
                 // Disable any tree actions
                 $model->rawNode($model->getLft(), $model->getRgt(), $parentId);
 
+                unset($itemData[$keyName]);
                 unset($existing[$key]);
             }
 
